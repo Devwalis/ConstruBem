@@ -6,7 +6,7 @@ package com.construBem.Api_construBem.identity.domain;
 
 public class User{
 
-    private String id;
+    private Long id;
     private String name;
     private String email;
     private String password;

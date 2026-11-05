@@ -1,7 +1,7 @@
 public class Phone {
 
 
-    private int id;
+    private Long id;
     private String name;
-    
+
 }

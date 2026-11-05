@@ -1,6 +1,8 @@
 
 package com.construBem.Api_construBem.identity.domain;
 
+import java.util.List;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,8 +13,8 @@ import lombok.NoArgsConstructor;
 
 public class Customer extends User  {
 
-    private Phone phone;
-    private Address addres;
+    private List<Phone> phone;
+    private List<Address> addres;
 
   
 }
