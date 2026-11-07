@@ -11,7 +11,13 @@ public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+
+    @NotBlank(message = "O logradouro é obrigatório")
+    private String street;
+
     
+
 
 }
 
