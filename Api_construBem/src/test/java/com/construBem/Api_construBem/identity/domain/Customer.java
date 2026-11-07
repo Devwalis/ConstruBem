@@ -8,10 +8,12 @@ import jakarta.persistence.CascadeType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @NoArgsConstructor 
 @AllArgsConstructor 
-@Data 
+@Gatter
+@Setter 
 @Table(name = "customers")
 public class Customer extends User  {
 
@@ -28,16 +30,16 @@ public class Customer extends User  {
 
     }
 
-    public void addAddress(Address address){
-        address.add(address);
+    public void addAddress(Address addr){
+        address.add(addr);
         address.setCustomer(this);
 
     }
     
 
-    public void addPhone(Phone phones){
-        phones.add(phone);
-        phone.setCUstomer(this);
+    public void addPhone(Phone ph){
+        phones.add(ph);
+        phone.setCustomer(this);
 
     }
     

@@ -37,6 +37,9 @@ public class Address {
     @NotBlank(message = "O estado é obrigatório")
     private String state;
 
-
+    @ManyToOne 
+    @JoinColumn(name = "customer_id")
+    private Customer customer;
+    
 }
 
