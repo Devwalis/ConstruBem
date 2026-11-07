@@ -7,5 +7,11 @@ import jakarta.validation.constraints.NotBlank;
 @Entity(name = "tb_addresses")
 public class Address {
 
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    
+
 }
 
