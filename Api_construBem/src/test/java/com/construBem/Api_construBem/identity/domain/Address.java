@@ -3,12 +3,14 @@ package com.construBem.Api_construBem.identity.domain;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 
 @Entity(name = "tb_addresses")
 @AllArgsConstructor 
 @NoArgsConstructor 
+@Data 
 public class Address {
 
 
