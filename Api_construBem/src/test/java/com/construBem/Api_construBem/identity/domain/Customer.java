@@ -38,8 +38,8 @@ public class Customer extends User  {
     public void addPhone(Phone phones){
         phones.add(phone);
         phone.setCUstomer(this);
-        
-    }
 
+    }
+    
   
 }
