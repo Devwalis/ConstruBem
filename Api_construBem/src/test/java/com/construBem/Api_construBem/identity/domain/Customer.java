@@ -21,7 +21,25 @@ public class Customer extends User  {
 
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Address>  address = new ArrayList<>();
+
+
+    public Customer(String name, String email, String password){
+        super(null, name, email, password, true);
+
+    }
+
+    public void addAddress(Address address){
+        address.add(address);
+        address.setCustomer(this);
+
+    }
     
+
+    public void addPhone(Phone phones){
+        phones.add(phone);
+        phone.setCUstomer(this);
+        
+    }
 
   
 }
