@@ -16,7 +16,20 @@ public class Address {
     @NotBlank(message = "O logradouro é obrigatório")
     private String street;
 
-    
+
+    @NotBlank(message = "O número é obrigatório")
+    private String number;
+
+    private String complement;
+
+    @NotBlank(message = "O CEP é obrigatório")
+    private String ZipCode;
+
+    @NotBlank(message = "O estado é obrigatório")
+    private String city;
+
+    @NotBlank(message = "O estado é obrigatório")
+    private String state;
 
 
 }
