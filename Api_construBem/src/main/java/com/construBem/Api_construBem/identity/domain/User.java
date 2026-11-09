@@ -8,10 +8,10 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
-import jakarta.persistence.Table;
-import jakarta.validation.constraint.Email;
-import jakarta.validation.constraint.NotBlank;
-import jakarta.validation.constraint.Size;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -22,8 +22,7 @@ import lombok.Data;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Entity
-@Table(name = "users")
+@Entity(name = "users")
 @Inheritance(strategy = InheritanceType.JOINED)
 public class User{
 
@@ -37,7 +36,7 @@ public class User{
 
     @NotBlank(message = "o email é obrigatório")
     @Email(message = "Formato de email inválido")
-    @Column(nullable = false, unique)
+    @Column(nullable = false, unique = true)
     private String email;
 
     @NotBlank(message = "A senha é Obrigatória ")
