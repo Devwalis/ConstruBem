@@ -37,15 +37,15 @@ public class Customer extends User  {
     }
 
     public void addAddress(Address addr){
-        address.add(addr);
-        address.setCustomer(this);
+        this.addresses.add(addr);
+        addr.setCustomer(this);
 
     }
     
 
     public void addPhone(Phone ph){
-        phones.add(ph);
-        phone.setCustomer(this);
+        this.phones.add(ph);
+        ph.setCustomer(this);
 
     }
     
