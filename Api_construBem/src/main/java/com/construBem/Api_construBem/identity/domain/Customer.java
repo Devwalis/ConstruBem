@@ -1,20 +1,26 @@
-
 package com.construBem.Api_construBem.identity.domain;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
+
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @NoArgsConstructor 
 @AllArgsConstructor 
-@Gatter
-@Setter 
-@Table(name = "customers")
+@Entity (name = "customers")
+@EqualsAndHashCode(callSuper = true) 
+@Setter
+@Getter 
 public class Customer extends User  {
 
 
@@ -22,7 +28,7 @@ public class Customer extends User  {
     private List<Phone> phones = new ArrayList<>(); 
 
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Address>  address = new ArrayList<>();
+    private List<Address>  addresses = new ArrayList<>();
 
 
     public Customer(String name, String email, String password){
