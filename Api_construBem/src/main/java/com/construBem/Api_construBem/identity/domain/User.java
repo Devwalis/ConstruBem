@@ -22,7 +22,7 @@ import lombok.Data;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Entity(name = "users")
+@Entity(name = "tb_users")
 @Inheritance(strategy = InheritanceType.JOINED)
 public class User{
 

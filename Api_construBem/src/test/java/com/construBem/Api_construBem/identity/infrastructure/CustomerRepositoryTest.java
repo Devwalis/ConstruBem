@@ -52,7 +52,7 @@ public class CustomerRepositoryTest {
 
 
  
-        Assertions.assertEquals("joão Silva", postCustomer.getName());
+        Assertions.assertEquals("João Silva", postCustomer.getName());
 
         //search customer in database to ensure that relationships were saved
         Customer customerDB = customerRepository.findById(postCustomer.getId()).orElseThrow();

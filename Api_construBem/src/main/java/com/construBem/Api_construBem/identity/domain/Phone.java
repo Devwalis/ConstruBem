@@ -26,11 +26,6 @@ public class Phone {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "O número é obrigátorio")
-    @Column(nullable = false)
-    private String name;
-
-
 
     @NotBlank(message = "O número é obrigátorio ")
     @Column(nullable = false)
