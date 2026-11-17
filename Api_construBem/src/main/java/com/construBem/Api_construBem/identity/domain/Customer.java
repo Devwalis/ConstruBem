@@ -17,7 +17,7 @@ import lombok.Setter;
 
 @NoArgsConstructor 
 @AllArgsConstructor 
-@Entity (name = "customers")
+@Entity (name = "tb_customers")
 @EqualsAndHashCode(callSuper = true) 
 @Setter
 @Getter 

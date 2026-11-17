@@ -4,7 +4,7 @@ import jakarta.persistence.Entity;
 
 
 
-@Entity(name = "managers")
+@Entity(name = "tb_managers")
 public class Manager extends User {
     
 }
